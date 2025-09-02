@@ -114,7 +114,7 @@ function filterFundedOnly() {
     deleteChildElements(gamesContainer);
 
     // use filter() to get a list of games that have met or exceeded their goal
-     const reachedGoal = GAMES_JSON.filter( (game) => {
+    const reachedGoal = GAMES_JSON.filter( (game) => {
         return game.pledged >= game.goal;
     });
 
@@ -150,13 +150,19 @@ allBtn.addEventListener("click", showAllGames);
 const descriptionContainer = document.getElementById("description-container");
 
 // use filter or reduce to count the number of unfunded games
-
-
+const unfundedGames = GAMES_JSON.filter( (game) => {
+    return game.pledged < game.goal;
+}).length;
 // create a string that explains the number of unfunded games using the ternary operator
-
-
+const displayStr = 
+    `A total of $${totalRaisedCard.toLocaleString()} has been raised for 
+    ${(totalGames)} games. 
+    Currently, ${unfundedGames} ${unfundedGames === 1 ? 'game remains' : 'games remain'} unfunded. 
+    We need your help to fund these amazing games!`;
 // create a new DOM element containing the template string and append it to the description container
-
+let new_paragraph = document.createElement('p');
+new_paragraph.innerHTML = displayStr;
+descriptionContainer.appendChild(new_paragraph);
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort 
