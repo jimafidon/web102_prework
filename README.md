@@ -24,19 +24,19 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/vDf0yQf' title='Jens Pre-Work Assignment' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+The hardest challenge was understanding some of the DOM elements and stateless variables that you had to use. I am not used to not being able to physically see changes within the code so utilizing Dev Tools more was a challenge for me. On top of that, it took me a while to truly understand the inner html display that we had to write and embed inside, only because embedding things in JavaScript is something I am just not yet used to. 
 
+Another challenge I faced was self doubt. I learned javascript through an online bootcamp like course which was self taught. I originally started working through this earlier on in the summer but frustration got the best of me and I gave up. I really regretted doing so afterwards and tried moving forward. Once I saw the email saying the deadline was extended I saw it as a second chance for me and spent all day working through this. I am really proud of myself for finishing and sticking through with it in the end.
 ## License
 
     Copyright [yyyy] [name of copyright owner]
